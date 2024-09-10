@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snappy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-y: scroll;
+            background-image: url('https://aduvan.ru/wp-content/uploads/photo-gallery/imported_from_media_libray/3000_2000-scaled.jpg?bwg=1598277785');
+            background-size: cover;
+            background-position: center;
+}
+        .header {
+            background-color: #FFD700;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 45px;
+            font-weight: bold;
+            margin-left: 20px;
+            font-family: 'Nerko One', sans-serif;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .button {
+            margin-right: 20px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background: none;
+            border: none;
+            font-size: 18px;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        .fixed-panel {
+            background-color: #ffaa00;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 150px;
+            height: 100vh;
+            z-index: 999;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .category {
+            width: 130px;
+            margin-bottom: 10px;
+            background-color: #ddff00;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s;
+        }
+        .category:hover {
+            background-color: #e65100;
+        }
+        .content {
+            margin-left: 170px;
+            padding-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .product {
+            width: 200px;
+            background-color: #f0f0f0;
+            border: 4px solid #7f0ecb;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .product a {
+            display: block;
+            width: 100%;
+            height: 150px;
+            text-decoration: none;
+            color: inherit;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+        .product .name {
+            font-weight: bold;
+        }
+        .product .price {
+            color: green;
+        }
+        .product .sale {
+            color: red;
+            font-size: 12px;
+        }
+        .product .rating {
+            font-size: 14px;
+        }
+        .product .uploader {
+            font-size: 12px;
+        }
+        .footer {
+            background-color: #94b9e3;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .content { margin-left: 170px;
+            padding-top: 100px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">Snappy</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+        </div>
+        <button class="button" onclick="window.location.href='menu.html'">☰</button>
+        <button class="button" onclick="window.location.href='basket.html'">🛒 Basket</button>
+        <button class="button" onclick="window.location.href='options.html'">⚙️ Options</button>
+        <button class="button" onclick="window.location.href='signin.html'">🔑 Sign in</button>
+    </div>
+
+    <div class="fixed-panel">
+        <button class="category">For Women</button>
+        <button class="category">Shoes</button>
+        <button class="category">For Children</button>
+        <button class="category">For Men</button>
+        <button class="category">Home</button>
+        <button class="category">Beauty</button>
+        <button class="category">Accessories</button>
+        <button class="category">Electronics</button>
+        <button class="category">Toys</button>
+        <button class="category">Furniture</button>
+        <button class="category">Adult Products</button>
+        <button class="category">Groceries</button>
+        <button class="category">Home Appliances</button>
+        <button class="category">Pet Supplies</button>
+        <button class="category">Sports</button>
+        <button class="category">Auto Products</button>
+        <button class="category">School</button>
+        <button class="category">Books</button>
+        <button class="category">Tools & Repair</button>
+        <button class="category">Garden & Country House</button>
+        <button class="category">Health</button>
+        <button class="category">Stationery</button>
+    </div>
+
+    <div class="content">
+        <div class="product">
+            <a href="product1.html" style="background-image: url('https://ir.ozone.ru/s3/multimedia-x/c1000/6583294617.jpg');"></a>
+            <div class="name">GamePad Xbox One</div>
+            <div class="price">$69.99</div>
+            <div class="sale">Sale: 20% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "XBOX"</div>
+        </div>
+        <div class="product">
+            <a href="product2.html" style="background-image: url('https://images.satu.kz/75722434_w600_h600_75722434.jpg');"></a>
+            <div class="name">Skipping rope with bearings</div>
+            <div class="price">$12.99</div>
+            <div class="rating">⭐⭐⭐☆☆ (3/5)</div>
+            <div class="uploader">Uploaded by Suki Nguyen</div>
+        </div>
+        <div class="product">
+            <a href="product3.html" style="background-image: url('https://content.podarki.ru/goods-images/858acc5b-1339-45aa-9e0a-d3c602a3570d.jpg');"></a>
+            <div class="name">Men's wallet 3 in 1</div>
+            <div class="price">$59.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐☆☆ (3/5)</div>
+            <div class="uploader">Uploaded by Zara Collins</div>
+        </div>
+        <div class="product">
+            <a href="product4.html" style="background-image: url('https://ae04.alicdn.com/kf/S3ef9c6ad0d91498c867d7e0e6aa747b1a.jpg');"></a>
+            <div class="name">Mouse Attack Shark X3</div>
+            <div class="price">$29.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "Defender"</div>
+        </div>
+        <div class="product">
+            <a href="product5.html" style="background-image: url('https://www.bingobongokids.com/wp-content/uploads/2024/01/ajazz-308i-retro-gray.jpg');"></a>
+            <div class="name">Ajazz 308i Wireless Bluetooth Keyboard</div>
+            <div class="price">$19.99</div>
+            <div class="sale">Sale: 70% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Sulpak"</div>
+        </div>
+        <div class="product">
+            <a href="product6.html" style="background-image: url('https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/201209061733817462/201209150027194055.png@webp');"></a>
+            <div class="name">AirPods Max</div>
+            <div class="price">$799.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Apple"</div>
+        </div>
+        <div class="product">
+            <a href="product7.html" style="background-image: url('https://ergostol.ru/upload/iblock/b82/efp2suehrkqvlc2rg9m4qgq8npb7osjo.jpg');"></a>
+            <div class="name">Bracket G100</div>
+            <div class="price">$49.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐☆☆☆☆ (1/5)</div>
+            <div class="uploader">Uploaded by Maisie Reed</div>
+        </div>
+        <div class="product">
+            <a href="product8.html" style="background-image: url('https://api.technodom.kz/f3/api/v1/images/800/800/smartfon_apple_iphone_15_pro_max_1tb_white_titanium_mu7h3_274427_1.jpg');"></a>
+            <div class="name">Iphone 15 Pro Max</div>
+            <div class="price">$1499.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Apple"</div>
+        </div>
+        <div class="product">
+            <a href="product9.html" style="background-image: url('https://activ.kz/shop/media/products/s24ultra_product_image_logo_with_ai_titanium_black.jpg');"></a>
+            <div class="name">Samsung Galaxy S24 Ultra 5G</div>
+            <div class="price">$399.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "Samsung"</div>
+        </div>
+        <div class="product">
+            <a href="product10.html" style="background-image: url('https://ae04.alicdn.com/kf/Sc7546ea48cff435084f89b386e47b782J.jpeg');"></a>
+            <div class="name">Robert Kiyosaki Rich Dad Poor Dad English Version</div>
+            <div class="price">$24.99</div>
+            <div class="sale"></div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "ImageBooks"</div>
+        </div>
+        <div class="product">
+            <a href="product11.html" style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-2/c1000/6355187774.jpg');"></a>
+            <div class="name">Toy for children "Car"</div>
+            <div class="price">$9.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Polesie"</div>
+        </div>
+        <div class="product">
+            <a href="product12.html" style="background-image: url('https://m.media-amazon.com/images/I/71tTWyypTKL._AC_UF894,1000_QL80_.jpg');"></a>
+            <div class="name">Hammer Standart</div>
+            <div class="price">$14.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "MasterTOOLS"</div>
+        </div>
+        <div class="product">
+            <a href="product13.html" style="background-image: url('https://m.media-amazon.com/images/I/61UmTTTSY8L.jpg');"></a>
+            <div class="name">Refillable Fountain Pen - Fine Point, Black Ink</div>
+            <div class="price">$19.99</div>
+            <div class="sale"></div>
+            <div class="rating">⭐☆☆☆☆(1/5)</div>
+            <div class="uploader">Uploaded by "ABDI"</div>
+        </div>
+        <div class="product">
+            <a href="product14.html" style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-p/c1000/6240250165.jpg');"></a>
+            <div class="name">Keychain "Lucky"</div>
+            <div class="price">$19.99</div>
+            <div class="sale">Sale: 20% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "CssKey"</div>
+        </div>
+        <div class="product">
+            <a href="product15.html" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGH9ctbV0AXxQs32px9mcw-ki3HG6MmoV4Ww&s');"></a>
+            <div class="name">Tower keychains</div>
+            <div class="price">$29.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by Gus Martinez</div>
+        </div>
+        <div class="product">
+            <a href="product16.html" style="background-image: url('https://m.media-amazon.com/images/I/61vj2BPDpuL._AC_UF894,1000_QL80_.jpg');"></a>
+            <div class="name">Anker power bank</div>
+            <div class="price">$79.99</div>
+            <div class="sale"></div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by Tilly Johnson</div>
+        </div>
+        <div class="product">
+            <a href="product17.html" style="background-image: url('https://techplaza.kz/image/cachewebp/catalog/Notebooks/Acer/Acer%20Aspire%203%20A315%20Silver-500x500.webp');"></a>
+            <div class="name">Acer Aspire 3 A315-59 laptop</div>
+            <div class="price">$349.99</div>
+            <div class="sale">Sale: 20% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "Acer"</div>
+        </div>
+        <div class="product">
+            <a href="product18.html" style="background-image: url('https://object.pscloud.io/cms/cms/Photo/img_0_62_2456_0_1.jpg');"></a>
+            <div class="name">Acer Nitro 5 AN515-55 laptop</div>
+            <div class="price">$479.99</div>
+            <div class="sale">Sale: 30% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Acer"</div>
+        </div>
+        <div class="product">
+            <a href="product19.html" style="background-image: url('https://nout.kz/upload/resize_cache/webp/iblock/e4e/fydg5wm0oymzwud2oxsvpe8v1z297ek1/3c285506b91c2353f2bfa4837a74a217_1000.webp');"></a>
+            <div class="name">Lenovo Legion 5 Pro gaming laptop</div>
+            <div class="price">$549.99</div>
+            <div class="sale">Sale: 20% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Lenovo"</div>
+        </div>
+        <div class="product">
+            <a href="product20.html" style="background-image: url('https://static.insales-cdn.com/r/yD_lhKLRjCg/rs:fit:550:550:1/plain/images/products/1/7872/52084416/casio-a168wa-1yes-small.jpg@jpg');"></a>
+            <div class="name">Electronic wristwatch Casio A168WA-1WDF</div>
+            <div class="price">$49.99</div>
+            <div class="sale">Sale: 50% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by "Gabeke"</div>
+        </div>
+        <div class="product">
+            <a href="product21.html" style="background-image: url('https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/O/OC/OCW/ocw-s6000-1a/assets/OCW-S5000ME-1A_2.png.transform/main-visual-sp/image.png');"></a>
+            <div class="name">Men's watch Casio OCWS6000-1A</div>
+            <div class="price">$19.99</div>
+            <div class="sale">Sale: 15% off</div>
+            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="uploader">Uploaded by "WatchMAN"</div>
+        </div>
+        <div class="product">
+            <a href="product22.html" style="background-image: url('https://cdn1.ozone.ru/s3/multimedia-n/6362508719.jpg');"></a>
+            <div class="name">Stronger with you intensely</div>
+            <div class="price">$19.99</div>
+            <div class="sale"></div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by Gabeke</div>
+        </div>
+        <div class="product">
+            <a href="product23.html" style="background-image: url('https://whey.kz/wp-content/uploads/2014/06/ON-whey-gold-5lb-chocolate-double-rich.jpg');"></a>
+            <div class="name">Optimum Nutrition Whey Gold Standard 100%</div>
+            <div class="price">$19.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐⭐⭐☆☆ (3/5)</div>
+            <div class="uploader">Uploaded by Leo Carter</div>
+        </div>
+        <div class="product">
+            <a href="product24.html" style="background-image: url('https://kach.kz/wp-content/uploads/2021/12/mutant-mass-2-27-kg-triple-chocolate.jpg');"></a>
+            <div class="name">Gainer Mutant Mass</div>
+            <div class="price">$49.99</div>
+            <div class="sale">Sale: 20% off</div>
+            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="uploader">Uploaded by Scout Bell</div>
+        </div>
+    </div>
+
+    <div class="footer" style="font-size: 0.8em;">
+        <p>&copy; 2024 Snappy. All rights reserved. | Developed by <a href="https://www.instagram.com/thisismagzhan?igsh=eWU2OTBuaG1kNXlk" target="_blank">Magzhan</a>, <a href="https://www.instagram.com/dymtyjoke?igsh=MXRvYXRxbDZhNHlsMw==" target="_blank">Dinmukhammed</a>, <a href="https://www.instagram.com/zhmstv?igsh=MXZoZzZ2azY4Z2ZkYg%3D%3D&utm_source=qr" target="_blank">Miras</a></p>
+        <div>
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+</body>
+</html>

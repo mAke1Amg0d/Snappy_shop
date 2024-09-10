@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basket - Snappy</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            background-image: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661423019_1-kartinkin-net-p-krasivii-yarkii-fon-dlya-fotoshopa-krasivo-1.jpg');
+            background-size: cover;
+        }
+
+        .container {
+            max-width: 1300px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .basket-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background-color: #FFD700;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        .basket-header h1 {
+            margin: 0;
+            font-size: 35px;
+            font-weight: 700;
+            color: #333;
+        }
+
+        .back-button {
+            text-decoration: none;
+            padding: 10px 20px;
+            background-color: #FFD700;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-button:hover {
+            background-color: #e6b800;
+        }
+
+        .basket-items {
+            display: flex;
+            flex-wrap: nowrap;
+            overflow-x: scroll;
+            padding: 20px 0;
+            gap: 20px;
+            scroll-behavior: smooth;
+        }
+
+        .basket-items::-webkit-scrollbar {
+            height: 10px;
+        }
+
+        .basket-items::-webkit-scrollbar-thumb {
+            background-color: #FFD700;
+            border-radius: 10px;
+        }
+
+        .item-card {
+            background-color: #fff;
+            border-radius: 80px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            min-width: 280px;
+            padding: 18px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        /* Ensure uniform image size */
+        .item-card img {
+            width: 150px;  /* Set a fixed width */
+            height: 150px; /* Set a fixed height */
+            object-fit: cover; /* Ensure images fit the container without stretching */
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .item-name {
+            font-weight: 700;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .item-price {
+            font-weight: 400;
+            font-size: 16px;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .quantity-selector {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .quantity-selector select {
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 2px solid #FFD700;
+        }
+
+        .remove-btn {
+            background-color: #ff4d4d;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            margin-top: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .remove-btn:hover {
+            background-color: #cc0000;
+        }
+
+        .checkout-section {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .total-price {
+            font-weight: 700;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .checkout-btn {
+            background-color: #FFD700;
+            border: none;
+            padding: 15px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .checkout-btn:hover {
+            background-color: #e6b800;
+        }
+    </style>
+</head>
+<body>
+    <div class="basket-header">
+        <h1>Your Basket 🛒</h1>
+        <a href="index.html" class="back-button">⬅️ Back to Main Page</a>
+    </div>
+
+    <div class="container">
+        <div class="basket-items">
+            <div class="item-card">
+                <img src="https://ir.ozone.ru/s3/multimedia-x/c1000/6583294617.jpg" alt="Product Image">
+                <div class="item-name">GamePad Xbox One</div>
+                <div class="item-price">$69.99</div>
+                <div class="quantity-selector">
+                    <label for="quantity1">Quantity:</label>
+                    <select id="quantity1" name="quantity1">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="item-card">
+                <img src="https://ae04.alicdn.com/kf/S3ef9c6ad0d91498c867d7e0e6aa747b1a.jpg" alt="Product Image">
+                <div class="item-name">Mouse Attack Shark X3</div>
+                <div class="item-price">$59.99</div>
+                <div class="quantity-selector">
+                    <label for="quantity2">Quantity:</label>
+                    <select id="quantity2" name="quantity2">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="item-card">
+                <img src="https://ir-3.ozone.ru/s3/multimedia-2/c1000/6355187774.jpg" alt="Product Image">
+                <div class="item-name">Toy for children "Car"</div>
+                <div class="item-price">$9.99</div>
+                <div class="quantity-selector">
+                    <label for="quantity3">Quantity:</label>
+                    <select id="quantity3" name="quantity3">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="item-card">
+                <img src="https://m.media-amazon.com/images/I/61UmTTTSY8L.jpg" alt="Product Image">
+                <div class="item-name">Refillable Fountain Pen - Fine Point, Black Ink</div>
+                <div class="item-price">$19.99</div>
+                <div class="quantity-selector">
+                    <label for="quantity4">Quantity:</label>
+                    <select id="quantity4" name="quantity4">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="item-card">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGH9ctbV0AXxQs32px9mcw-ki3HG6MmoV4Ww&s" alt="Product Image">
+                <div class="item-name">Tower keychains</div>
+                <div class="item-price">$29.99</div>
+                <div class="quantity-selector">
+                    <label for="quantity5">Quantity:</label>
+                    <select id="quantity5" name="quantity5">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+            <div class="item-card">
+                <img src="https://ergostol.ru/upload/iblock/b82/efp2suehrkqvlc2rg9m4qgq8npb7osjo.jpg" alt="Product Image">
+                <div class="item-name">Bracket G100</div>
+                <div class="item-price">$49.99</div>
+                <div class="quantity-selector">
+                    <label for="quantity6">Quantity:</label>
+                    <select id="quantity6" name="quantity6">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+                <button class="remove-btn">Remove</button>
+            </div>
+        </div>
+        <div class="checkout-section">
+            <div class="total-price">Total: $239.94</div>
+            <button class="checkout-btn">Proceed to Checkout</button>
+        </div>
+    </div>
+</body>
+</html>
