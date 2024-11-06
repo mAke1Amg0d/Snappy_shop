@@ -4,74 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Options</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f4f4f4;
-            background-image: url('https://st.depositphotos.com/1004293/2784/v/450/depositphotos_27848427-stock-illustration-abstract-geometric-backgrounds.jpg');
-            background-size: cover;
-            background-position: center;
-        }
-        .back-link {
-            display: inline-block;
-            
-            padding: 10px 20px;
-            background-color: #FFD700;
-            border: none;
-            cursor: pointer;
-            font-size: 16px;
-            text-decoration: none;
-            color: #000;
-            border-radius: 6px;
-            margin-bottom: 20px;
-            transition: background-color 0.3s ease;
-        }
-        .back-link:hover {
-            background-color: #e6b800;
-        }
-        .options-container {
-            background-color: #fff;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        h1 {
-            margin-bottom: 20px;
-            color: #333;
-        }
-        .option {
-            padding: 15px;
-            margin: 10px 0;
-            border: 1px solid #ddd;
-            border-radius: 6px;
-            background-color: #f9f9f9;
-            text-align: center;
-            font-size: 16px;
-            cursor: pointer;
-            transition: background-color 0.3s ease, transform 0.3s ease;
-        }
-        .option:hover {
-            background-color: #f0f0f0;
-            transform: scale(1.02);
-        }
-    </style>
+    <link rel="stylesheet" href="Options.css">
 </head>
 <body>
     <a href="index.html" class="back-link">⬅️ Back to Main Page</a>
+
     <div class="options-container">
-        <h1>Options</h1>
-        <div class="option">Account Settings</div>
-        <div class="option">Notification Preferences</div>
-        <div class="option">Privacy Settings</div>
-        <div class="option">Payment Methods</div>
-        <div class="option">Order History</div>
-        <div class="option">Help & Support</div>
-        <div class="option">Language Preferences</div>
-        <div class="option">Log Out</div>
+        <h1>Profile Options</h1>
+
+        <div class="option">Change Avatar</div>
+        <div class="option" id="theme-toggle">Change Theme (Light/Dark)</div>
+
+        <h2>Privacy Settings</h2>
+        <div class="option">Account Privacy</div>
+        <div class="option">Manage Access and Permissions</div>
+
+        <h2>Account Access</h2>
+        <div class="auth-container">
+            <a href="signin.html" class="option auth-option">Sign In</a>
+            <a href="register.html" class="option auth-option">Register</a>
+            <a href="register.html" class="option auth-option" onclick="logout(); return false;">Logout</a>
+        </div>
+
+        <h2>FAQs</h2>
+        <div class="faq-container">
+            <div class="faq-item">
+                <div class="faq-question">What is Snappy?</div>
+                <div class="faq-answer">Snappy is an online platform offering a variety of products for sale with easy access and user-friendly interfaces.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">How can I reset my password?</div>
+                <div class="faq-answer">To reset your password, navigate to the sign-in page, click "Forgot password," and follow the instructions.</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">What are the delivery options?</div>
+                <div class="faq-answer">We offer several delivery options, including standard, express, and same-day delivery in certain areas.</div>
+            </div>
+        </div>
     </div>
+
+    <div class="footer" style="font-size: 0.8em;">
+        <p>&copy; 2024 Snappy. All rights reserved. | Developed by Magzhan, Dinmukhammed, Miras</p>
+        <div>
+            <a href="about.html">About Us</a> | 
+            <a href="contact.html">Contact</a> | 
+            <a href="privacy.html">Privacy Policy</a> | 
+            <a href="terms.html">Terms of Service</a>
+        </div>
+        <div>
+            <a href="https://www.facebook.com" target="_blank">Facebook</a> | 
+            <a href="https://www.twitter.com" target="_blank">Twitter</a> | 
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </div>
+    </div>
+
+    <script src="logout.js"></script>
+    <script src="themechanger.js"></script>
 </body>
 </html>

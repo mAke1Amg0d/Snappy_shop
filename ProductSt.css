@@ -1,0 +1,316 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://img.freepik.com/free-photo/vibrant-pink-watercolor-painting-background_53876-139893.jpg?size=626&ext=jpg&ga=GA1.1.2008272138.1725840000&semt=ais_hybrid');
+    background-size: cover;
+    background-position: center;
+}
+
+.header {
+    background-color: #f39c12;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 45px;
+    font-weight: bold;
+    margin-left: 20px;
+    font-family: 'Nerko One', cursive;
+}
+
+.go-back {
+    margin-left: 20px;
+    padding: 8px 15px;
+    font-size: 16px;
+    border: 2px solid #800080;
+    background-color: #c97d03;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.go-back:hover {
+    background-color: #e6b800;
+    border-color: #600060;
+}
+
+.button {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    background: none;
+    border: none;
+    font-size: 18px;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.product-page {
+    padding-top: 80px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.product-info-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.product-image {
+    width: 40%;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+    border: 5px solid #a8b0d0;
+}
+
+.product-info {
+    width: 55%;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.product-info h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.product-details {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px; 
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 28px;
+    color: green;
+}
+
+.sale {
+    color: red;
+    font-size: 18px;
+}
+
+.rating {
+    font-size: 30px; 
+    margin-top: 10px;
+}
+
+.uploader {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.buy-button, .basket-button, .favourite-button {
+    background-color: #FFD700;
+    border: 2px solid #800080;
+    padding: 10px;
+    width: 30%;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+    display: inline-block;
+}
+
+.buy-button:hover, .basket-button:hover, .favourite-button:hover {
+    background-color: #e6b800;
+}
+
+.comments-section {
+    margin-top: 40px;
+    text-align: left;
+    margin: 0 20px;
+    padding-bottom: 100px;
+}
+
+.footer {
+    background-color: #95f7c8;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.comment-box {
+    margin: 20px 0;
+}
+
+.comment-box textarea {
+    width: 100%;
+    height: 80px;
+    padding: 10px;
+    border: 1px solid #007380;
+    resize: none;
+}
+
+.comment-box button {
+    background-color: #FFD700;
+    border: 2px solid #800080;
+    padding: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.comment {
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+
+.comment strong {
+    display: block;
+}
+.popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.popup-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 300px;
+    position: relative;
+}
+
+.popup-basket-link {
+    color: #007bff;
+    text-decoration: none;
+    display: block;
+    margin-top: 10px;
+}
+
+.popup-close {
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.popup-close:hover {
+    background-color: #e67e22;
+}
+
+.char{
+    font-size: 18px; 
+    color:darkslategray
+}
+
+.star {
+    font-size: 2em; 
+    color: black;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.star:hover,
+.star:hover ~ .star {
+    color: gold;
+}
+
+.star.selected {
+    color: gold;
+}
+
+.product-info {
+    border: 2px solid #ccc;
+    padding: 20px; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    background-color:#e0e0e0;
+    width: 100%;
+}
+
+.product-info h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.char h2 {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333; 
+}
+
+.product-description {
+    border: 2px solid #e0e0e0; 
+    padding: 15px 20px; 
+    border-radius: 10px; 
+    background-color: #f7f7f7; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin-top: 20px;
+    line-height: 1.6; 
+}
+
+#read-more-btn {
+    background-color: #007bff; 
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#read-more-btn:hover {
+    background-color: #0056b3; 
+}
+
+.product-description p {
+    margin-bottom: 10px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav ul li {
+    margin: 10px 0;
+  }
+  
+  nav ul li:focus {
+    outline: 2px solid blue;
+    background-color: #f0f0f0;
+  }

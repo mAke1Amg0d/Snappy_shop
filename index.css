@@ -1,0 +1,173 @@
+        @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-y: scroll;
+            background-color: #e8efb7;
+            background-size: cover;
+            background-position: center;
+        }
+        .header {
+            background-color: #f39c12;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .logo {
+            font-size: 45px;
+            font-weight: bold;
+            margin-left: 20px;
+            font-family: 'Nerko One', sans-serif;
+        }
+        .search-bar {
+            flex-grow: 1;
+            margin: 0 20px;
+        }
+        .search-bar input {
+            width: 100%;
+            padding: 5px;
+            font-size: 16px;
+        }
+        .button {
+            margin-right: 20px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background: none;
+            border: none;
+            font-size: 18px;
+        }
+        .button:hover {
+            transform: scale(1.1);
+        }
+        .fixed-panel {
+            background-color: #f8c471;
+            position: fixed;
+            top: 50px;
+            left: 0;
+            width: 150px;
+            height: 100vh;
+            z-index: 999;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 20px;
+        }
+        .category {
+            width: 130px;
+            margin-bottom: 10px;
+            background-color: #f39c12;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 14px;
+            text-align: center;
+            padding: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+            transition: background-color 0.2s;
+        }
+        .category:hover {
+            background-color: #e65100;
+        }
+        .content {
+            margin-left: 170px;
+            padding-top: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .product {
+            width: 200px;
+            background-color: #f0f0f0;
+            border: 4px solid #fad43b;
+            box-sizing: border-box;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .product a {
+            display: block;
+            width: 100%;
+            height: 150px;
+            text-decoration: none;
+            color: inherit;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 10px;
+        }
+        .product .name {
+            font-weight: bold;
+        }
+        .product .price {
+            color: green;
+        }
+        .product .sale {
+            color: red;
+            font-size: 12px;
+        }
+        .product .rating {
+            font-size: 14px;
+        }
+        .product .uploader {
+            font-size: 12px;
+        }
+        .footer {
+            background-color: #95f7c8;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .content { margin-left: 170px;
+            padding-top: 100px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .bu{
+            margin-left: 20px;
+            padding: 8px 15px;
+            font-size: 16px;
+            border: 2px solid #800080;
+            background-color: #c97d03;
+            text-decoration: none;
+        }
+        body.day-theme {
+            background-color: #ffffff;
+            color: #12012d;
+        }
+        
+        body.night-theme {
+            background-color: #0c0d35;
+            color: #010101;
+        }
+        .product:focus {
+            outline: 6px solid rgb(142, 31, 3);
+          }
+        .product-grid {
+            display: flex;
+        }
+        .load-more{
+            margin-left: 20px;
+            padding: 8px 15px;
+            font-size: 16px;
+            border: 2px solid #800080;
+            background-color: #c97d03;
+            text-decoration: none
+        }

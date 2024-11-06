@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ - Snappy</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f7c8;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #f1a43c;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .accordion {
+            cursor: pointer;
+            padding: 10px;
+            border: none;
+            outline: none;
+            width: 100%;
+            text-align: left;
+            background-color: #f1a43c;
+            color: #fff;
+            margin-bottom: 5px;
+            border-radius: 4px;
+        }
+
+        .panel {
+            padding: 0 15px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+            border: 1px solid #f1a43c;
+            border-radius: 4px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Frequently Asked Questions</h1>
+    </div>
+
+    <div class="container">
+        <button class="accordion">How do I reset my password?</button>
+        <div class="panel">
+            <p>To reset your password, go to the login page and click on "Forgot Password". Follow the instructions in the email you receive.</p>
+        </div>
+
+        <button class="accordion">Where can I view my order history?</button>
+        <div class="panel">
+            <p>You can view your order history in your account dashboard under the "Orders" section.</p>
+        </div>
+
+        <button class="accordion">How can I contact support?</button>
+        <div class="panel">
+            <p>You can contact support via the 'Contact Us' page. Fill out the form and we'll get back to you as soon as possible.</p>
+        </div>
+    </div>
+
+    <script>
+        const accordions = document.querySelectorAll('.accordion');
+
+        accordions.forEach(accordion => {
+            accordion.addEventListener('click', function() {
+                this.classList.toggle('active');
+                const panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
