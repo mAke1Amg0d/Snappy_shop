@@ -5,7 +5,6 @@
             margin: 0;
             padding: 0;
             background-color: #f5f5f5;
-            background-image: url('https://kartinki.pics/pics/uploads/posts/2022-08/1661423019_1-kartinkin-net-p-krasivii-yarkii-fon-dlya-fotoshopa-krasivo-1.jpg');
             background-size: cover;
         }
 
@@ -180,4 +179,12 @@
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
+        }
+
+        body.night-theme {
+            background-color: #0c0d35;
+        }
+
+        .night-theme .basket-header {
+            background-color: rgb(65, 83, 149);
         }

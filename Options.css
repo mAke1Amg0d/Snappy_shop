@@ -191,3 +191,36 @@ body.dark-mode .faq-answer {
     color: #ecf0f1;
     border-left-color: #3498db; 
 }
+
+
+
+
+
+body.night-theme {
+    background-color: #0c0d35;
+}
+
+.night-theme .options-container {
+    background-color: #1215a5;
+}
+
+.night-theme .option {
+    background-color: #a5cdfb;
+    color: #000000;
+}
+
+.night-theme .titleee {
+    color: #a5cdfb;
+}
+
+.night-theme .back-link {
+    background-color: #0a47a1;
+}
+
+.night-theme .footer {
+    background-color: rgb(22, 8, 50);
+}
+
+.night-theme .textfoot {
+    color: rgb(255, 255, 255);
+}

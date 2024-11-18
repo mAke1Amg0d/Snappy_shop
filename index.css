@@ -49,7 +49,7 @@
         .fixed-panel {
             background-color: #f8c471;
             position: fixed;
-            top: 50px;
+            top: 70px;
             left: 0;
             width: 150px;
             height: 100vh;
@@ -140,17 +140,74 @@
             gap: 10px;
         }
 
-        .bu{
+        .day-theme .thememe {
             margin-left: 20px;
-            padding: 8px 15px;
+            padding: 7px 13px;
             font-size: 16px;
-            border: 2px solid #800080;
-            background-color: #c97d03;
+            border: 2px solid #1b092c;
+            background-color: #4d0dad;
             text-decoration: none;
+            border-radius: 20px;
         }
+
+        .night-theme .thememe {
+            margin-left: 20px;
+            padding: 7px 13px;
+            font-size: 16px;
+            border: 2px solid #ffffff;
+            background-color: #acdeee;
+            text-decoration: none;
+            border-radius: 20px;
+        }
+
         body.day-theme {
             background-color: #ffffff;
             color: #12012d;
+        }
+
+        .day-theme .textfoot {
+            color: #000000;
+        }
+
+        .day-theme .logo {
+            color: #000000;
+        }
+
+        .day-theme .price {
+            color: green;
+        }
+
+        .night-theme .price {
+            color: rgb(178, 232, 175);
+        }
+
+        .night-theme .logo {
+            color: rgb(255, 255, 255);
+        }
+
+        .night-theme .header {
+            background-color: rgb(65, 83, 149);
+        }
+
+        .night-theme .fixed-panel {
+            background-color: rgb(29, 40, 81);
+        }
+
+        .night-theme .category {
+            background-color: rgb(106, 131, 218);
+        }
+
+        .night-theme .product {
+            background-color: rgb(121, 33, 222);
+            border-color: #ffffff;
+        }
+
+        .night-theme .footer {
+            background-color: rgb(22, 8, 50);
+        }
+
+        .night-theme .textfoot {
+            color: rgb(255, 255, 255);
         }
         
         body.night-theme {
@@ -170,4 +227,9 @@
             border: 2px solid #800080;
             background-color: #c97d03;
             text-decoration: none
+        }
+
+        .hide{
+            color: hsl(0, 0%, 94%);
+            font-size: 8px;
         }

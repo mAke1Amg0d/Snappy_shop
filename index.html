@@ -16,33 +16,25 @@
             <button class="button" tabindex="0" onclick="window.location.href='what.html'">☰</button>
             <button class="button" tabindex="0" onclick="window.location.href='basket.html'">🛒 Basket</button>
             <button class="button" tabindex="0" onclick="window.location.href='options.html'">⚙️ Options</button>
-            <button class="button" tabindex="0" onclick="window.location.href='signin.html'">🔑 Sign in</button>
-          </nav>
-        <div class="bu">
-            <button id="theme-toggle">Change-Theme</button>
-        </div>
+            <!-- Updated Sign-In and Profile buttons -->
+            <button id="signInButton" class="button" tabindex="0" onclick="window.location.href='signin.html'">🔑 Sign in</button>
+            <button id="profileButton" class="button" tabindex="0" style="display: none;" onclick="window.location.href='profile.html'">👤 Profile</button>
+        </nav>
+        <button class="thememe" id="theme-toggle">Change-Theme</button>
     </div>
+    
     <div class="fixed-panel">
-        <button class="category">  </button>
-        <button class="category">Shoes</button>
+        <button class="category"> ALL </button>
+        <button class="category">Cloth and Accessories</button>
         <button class="category">For Children</button>
-        <button class="category">Home</button>
-        <button class="category">Beauty</button>
-        <button class="category">Accessories</button>
         <button class="category">Electronics</button>
         <button class="category">Furniture</button>
-        <button class="category">Adult Products</button>
-        <button class="category">Groceries</button>
-        <button class="category">Home Appliances</button>
-        <button class="category">Pet Supplies</button>
-        <button class="category">Sports</button>
-        <button class="category">Auto Products</button>
-        <button class="category">School</button>
-        <button class="category">Books</button>
+        <button class="category">Household items</button>
         <button class="category">Tools & Repair</button>
-        <button class="category">Garden & Country House</button>
-        <button class="category">Health</button>
-        <button class="category">Stationery</button>
+        <button class="category">Sport and health</button>
+        <button class="category">Books and stationery</button>
+        <button class="category">Hobbies and creativity</button>
+        <button class="category">Foodstuff</button>
     </div>
     <div class="content" >
         <div class="product" tabindex="0">
@@ -50,196 +42,328 @@
             <div class="name">GamePad Xbox One</div>
             <div class="price">$69.99</div>
             <div class="sale">Sale: 20% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "XBOX"</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product2.html" style="background-image: url('https://images.satu.kz/75722434_w600_h600_75722434.jpg');"></a>
             <div class="name">Skipping rope with bearings</div>
             <div class="price">$12.99</div>
-            <div class="rating">⭐⭐⭐☆☆ (3/5)</div>
+            <div class="rating">⭐️⭐️⭐️☆☆ (3/5)</div>
             <div class="uploader">Uploaded by Suki Nguyen</div>
+            <div class="hide">Sport and healthALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product3.html" style="background-image: url('https://content.podarki.ru/goods-images/858acc5b-1339-45aa-9e0a-d3c602a3570d.jpg');"></a>
             <div class="name">Men's wallet 3 in 1</div>
             <div class="price">$59.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐☆☆ (3/5)</div>
+            <div class="rating">⭐️⭐️⭐️☆☆ (3/5)</div>
             <div class="uploader">Uploaded by Zara Collins</div>
+            <div class="hide">Сloth and AccessoriesALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product4.html" style="background-image: url('https://ae04.alicdn.com/kf/S3ef9c6ad0d91498c867d7e0e6aa747b1a.jpg');"></a>
             <div class="name">Mouse Attack Shark X3</div>
             <div class="price">$29.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "Defender"</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product5.html" style="background-image: url('https://www.bingobongokids.com/wp-content/uploads/2024/01/ajazz-308i-retro-gray.jpg');"></a>
             <div class="name">Ajazz 308i Wireless Bluetooth Keyboard</div>
             <div class="price">$19.99</div>
             <div class="sale">Sale: 70% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "Sulpak"</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product6.html" style="background-image: url('https://cdn0.ipoint.kz/AfrOrF3gWeDA6VOlDG4TzxMv39O7MXnF4CXpKUwGqRM/resize:fill:540/bg:f6f6f6/q:100/plain/s3://catalog-products/201209061733817462/201209150027194055.png@webp');"></a>
             <div class="name">AirPods Max</div>
             <div class="price">$799.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "Apple"</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product7.html" style="background-image: url('https://ergostol.ru/upload/iblock/b82/efp2suehrkqvlc2rg9m4qgq8npb7osjo.jpg');"></a>
             <div class="name">Bracket G100</div>
             <div class="price">$49.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐☆☆☆☆ (1/5)</div>
+            <div class="rating">⭐️☆☆☆☆ (1/5)</div>
             <div class="uploader">Uploaded by Maisie Reed</div>
+            <div class="hide">Furniture Household itemsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product8.html" style="background-image: url('https://api.technodom.kz/f3/api/v1/images/800/800/smartfon_apple_iphone_15_pro_max_1tb_white_titanium_mu7h3_274427_1.jpg');"></a>
             <div class="name">Iphone 15 Pro Max</div>
             <div class="price">$1499.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "Apple"</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product9.html" style="background-image: url('https://activ.kz/shop/media/products/s24ultra_product_image_logo_with_ai_titanium_black.jpg');"></a>
             <div class="name">Samsung Galaxy S24 Ultra 5G</div>
             <div class="price">$399.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "Samsung"</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product10.html" style="background-image: url('https://ae04.alicdn.com/kf/Sc7546ea48cff435084f89b386e47b782J.jpeg');"></a>
             <div class="name">Robert Kiyosaki Rich Dad Poor Dad English Version</div>
             <div class="price">$24.99</div>
             <div class="sale"></div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "ImageBooks"</div>
+            <div class="hide">Books and stationery Hobbies and creativityALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product11.html"  style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-2/c1000/6355187774.jpg');"></a>
             <div class="name">Toy for children "Car"</div>
             <div class="price">$9.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "Polesie"</div>
+            <div class="hide">For ChildrenALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product12.html"  style="background-image: url('https://m.media-amazon.com/images/I/71tTWyypTKL._AC_UF894,1000_QL80_.jpg');"></a>
             <div class="name">Hammer Standart</div>
             <div class="price">$14.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "MasterTOOLS"</div>
+            <div class="hide">Tools & Repair Household itemsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product13.html"  style="background-image: url('https://m.media-amazon.com/images/I/61UmTTTSY8L.jpg');"></a>
             <div class="name">Refillable Fountain Pen - Fine Point, Black Ink</div>
             <div class="price">$19.99</div>
             <div class="sale"></div>
-            <div class="rating">⭐☆☆☆☆(1/5)</div>
+            <div class="rating">⭐️☆☆☆☆(1/5)</div>
             <div class="uploader">Uploaded by "ABDI"</div>
+            <div class="hide">Books and stationeryALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product14.html"  style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-p/c1000/6240250165.jpg');"></a>
             <div class="name">Keychain "Lucky"</div>
             <div class="price">$19.99</div>
             <div class="sale">Sale: 20% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "CssKey"</div>
+            <div class="hide">Cloth and AccessoriesALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product15.html"   style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQGH9ctbV0AXxQs32px9mcw-ki3HG6MmoV4Ww&s');"></a>
             <div class="name">Tower keychains</div>
             <div class="price">$29.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by Gus Martinez</div>
+            <div class="hide">Cloth and AccessoriesALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product16.html"  style="background-image: url('https://m.media-amazon.com/images/I/61vj2BPDpuL._AC_UF894,1000_QL80_.jpg');"></a>
             <div class="name">Anker power bank</div>
             <div class="price">$79.99</div>
             <div class="sale"></div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by Tilly Johnson</div>
+            <div class="hide">ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product17.html"  style="background-image: url('https://techplaza.kz/image/cachewebp/catalog/Notebooks/Acer/Acer%20Aspire%203%20A315%20Silver-500x500.webp');"></a>
             <div class="name">Acer Aspire 3 A315-59 laptop</div>
             <div class="price">$349.99</div>
             <div class="sale">Sale: 20% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "Acer"</div>
+            <div class="hide">Electronics Household itemsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product18.html" style="background-image: url('https://object.pscloud.io/cms/cms/Photo/img_0_62_2456_0_1.jpg');"></a>
             <div class="name">Acer Nitro 5 AN515-55 laptop</div>
             <div class="price">$479.99</div>
             <div class="sale">Sale: 30% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "Acer"</div>
+            <div class="hide">Electronics Household itemsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product19.html"  style="background-image: url('https://nout.kz/upload/resize_cache/webp/iblock/e4e/fydg5wm0oymzwud2oxsvpe8v1z297ek1/3c285506b91c2353f2bfa4837a74a217_1000.webp');"></a>
             <div class="name">Lenovo Legion 5 Pro gaming laptop</div>
             <div class="price">$549.99</div>
             <div class="sale">Sale: 20% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by "Lenovo"</div>
+            <div class="hide">Electronics Household itemsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product20.html"  style="background-image: url('https://static.insales-cdn.com/r/yD_lhKLRjCg/rs:fit:550:550:1/plain/images/products/1/7872/52084416/casio-a168wa-1yes-small.jpg@jpg');"></a>
             <div class="name">Electronic wristwatch Casio A168WA-1WDF</div>
             <div class="price">$49.99</div>
             <div class="sale">Sale: 50% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "Gabeke"</div>
+            <div class="hide">Cloth and Accessories ElectronicsALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product21.html"  style="background-image: url('https://www.casio.com/content/dam/casio/product-info/locales/us/en/timepiece/product/watch/O/OC/OCW/ocw-s6000-1a/assets/OCW-S5000ME-1A_2.png.transform/main-visual-sp/image.png');"></a>
             <div class="name">Men's watch Casio OCWS6000-1A</div>
             <div class="price">$19.99</div>
             <div class="sale">Sale: 15% off</div>
-            <div class="rating">⭐⭐⭐⭐☆ (4/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
             <div class="uploader">Uploaded by "WatchMAN"</div>
+            <div class="hide">Cloth and AccessoriesALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product22.html"  style="background-image: url('https://cdn1.ozone.ru/s3/multimedia-n/6362508719.jpg');"></a>
             <div class="name">Stronger with you intensely</div>
             <div class="price">$19.99</div>
             <div class="sale"></div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by Gabeke</div>
+            <div class="hide">Sport and healthALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product23.html" style="background-image: url('https://whey.kz/wp-content/uploads/2014/06/ON-whey-gold-5lb-chocolate-double-rich.jpg');"></a>
             <div class="name">Optimum Nutrition Whey Gold Standard 100%</div>
             <div class="price">$19.99</div>
             <div class="sale">Sale: 10% off</div>
-            <div class="rating">⭐⭐⭐☆☆ (3/5)</div>
+            <div class="rating">⭐️⭐️⭐️☆☆ (3/5)</div>
             <div class="uploader">Uploaded by Leo Carter</div>
+            <div class="hide">Sport and health FoodstuffALL</div>
         </div>
         <div class="product" tabindex="0">
             <a href="product24.html"  style="background-image: url('https://kach.kz/wp-content/uploads/2021/12/mutant-mass-2-27-kg-triple-chocolate.jpg');"></a>
             <div class="name">Gainer Mutant Mass</div>
             <div class="price">$49.99</div>
             <div class="sale">Sale: 20% off</div>
-            <div class="rating">⭐⭐⭐⭐⭐ (5/5)</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
             <div class="uploader">Uploaded by Scout Bell</div>
+            <div class="hide">Sport and health  FoodstuffALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product25.html" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRF7WrUE7O3vOdiTGBV4u8Je0sKVZw3vDLXxw&s');"></a>
+            <div class="name">Lego minecraft The skeleton dungeon</div>
+            <div class="price">$54.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
+            <div class="uploader">Uploaded by "Igruha"</div>
+            <div class="hide">For Children Hobbies and creativity Household itemsALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product26.html" style="background-image: url('https://nout.kz/upload/resize_cache/webp/iblock/973/1r1sxqd8whpnexdboyuum6frok86aosa/product_162251660705a4c1d73fdd6e856080f6031cf61712.webp');"></a>
+            <div class="name">MSI GeForce RTX 3070 Ti Suprim X 8G</div>
+            <div class="price">$956.49</div>
+            <div class="sale">Sale: 25% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
+            <div class="uploader">Uploaded by "RTX torg"</div>
+            <div class="hide">ElectronicsALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product27.html" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRg8clll5-7UvsJILR9M9Pbhsi3SiTCjkPQFQ&s');"></a>
+            <div class="name">Vacuum cleaner ARG HJX 2202 Force</div>
+            <div class="price">$48.99</div>
+            <div class="sale"></div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
+            <div class="uploader">Uploaded by Gabeke</div>
+            <div class="hide">Electronics Household itemsALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product28.html" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRBCeD8hHI9KW6qViw7xYGx53taIU4BfBRfVg&s');"></a>
+            <div class="name">Snickers mini</div>
+            <div class="price">$49.67</div>
+            <div class="sale">Sale: 37% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
+            <div class="uploader">Uploaded by "SHockoladia"</div>
+            <div class="hide">FoodstuffALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product29.html" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVAGa3rKaAgDQqaqPdJZW_B_srpRpOS0El_g&s');"></a>
+            <div class="name">Personalized Diary with pen</div>
+            <div class="price">$5.59</div>
+            <div class="sale"></div>
+            <div class="rating">⭐️⭐️⭐️☆☆ (3/5)</div>
+            <div class="uploader">Uploaded by "V-dumchik"</div>
+            <div class="hide">Books and stationery Hobbies and creativityALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product30.html" style="background-image: url('https://avatars.mds.yandex.net/get-mpic/11450294/2a0000018b3ed447abb190c14a0cfac44f68/300x400');"></a>
+            <div class="name">Pringles with tomato flavor 20 pieces box</div>
+            <div class="price">$37.59</div>
+            <div class="sale">Sale: 40% off</div>
+            <div class="rating">⭐️☆☆☆☆ (1/5)</div>
+            <div class="uploader">Uploaded by "Kellanova"</div>
+            <div class="hide">FoodstuffALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product31.html" style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-x/wc1000/6022609005.jpg');"></a>
+            <div class="name">Coat Envy Lab</div>
+            <div class="price">$96.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
+            <div class="uploader">Uploaded by "ENVY lab"</div>
+            <div class="hide">Cloth and AccessoriesALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product32.html" style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-l/wc1000/6426804357.jpg');"></a>
+            <div class="name">Sofa bed Compact Right FOCUS-</div>
+            <div class="price">$227.19</div>
+            <div class="sale">Sale: 5% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️☆ (4/5)</div>
+            <div class="uploader">Uploaded by "Focus furniture"</div>
+            <div class="hide">Furniture Household itemsALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product33.html" style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-1-2/wc1000/7018501826.jpg');"></a>
+            <div class="name">Jacket Gloria Jeans GJ Black</div>
+            <div class="price">$77.39</div>
+            <div class="sale"></div>
+            <div class="rating">⭐️⭐️⭐️☆☆ (3/5)</div>
+            <div class="uploader">Uploaded by "ClothedMAN"</div>
+            <div class="hide">Cloth and AccessoriesALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product34.html" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7IgDqZae7GvgBKp2ASe-KcttbtneoGZwxgg&s');"></a>
+            <div class="name">Physical globe GLOBEN "Classic"</div>
+            <div class="price">$4.99</div>
+            <div class="sale">Sale: 10% off</div>
+            <div class="rating">⭐️⭐️☆☆☆ (2/5)</div>
+            <div class="uploader">Uploaded by ScumMaster</div>
+            <div class="hide">Books and stationeryALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product35.html" style="background-image: url('https://artpaints.ru/media/thumbs/sync/products/df6818fd-1693-11ea-5386-000d3a4620d8/2.jpeg.555x555_q85_upscale.jpg');"></a>
+            <div class="name">Set of gouache paints</div>
+            <div class="price">$10.29</div>
+            <div class="sale">Sale: 15% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
+            <div class="uploader">Uploaded by "iAM Painter"</div>
+            <div class="hide">Hobbies and creativity For ChildrenALL</div>
+        </div>
+        <div class="product" tabindex="0">
+            <a href="product36.html" style="background-image: url('https://ir-3.ozone.ru/s3/multimedia-1/c1000/6287215777.jpg');"></a>
+            <div class="name">Yoshikage Kira Tie |Jojo series</div>
+            <div class="price">$39.99</div>
+            <div class="sale">Sale: 20% off</div>
+            <div class="rating">⭐️⭐️⭐️⭐️⭐️ (5/5)</div>
+            <div class="uploader">Uploaded by "JOJO-Fanatik"</div>
+            <div class="hide">Cloth and AccessoriesALL</div>
         </div>
     </div>
 
     <div class="footer" style="font-size: 0.8em;">
-        <p>&copy; 2024 Snappy. All rights reserved. | Developed by <a href="https://www.instagram.com/thisismagzhan?igsh=eWU2OTBuaG1kNXlk" target="_blank">Magzhan</a>, <a href="https://www.instagram.com/dymtyjoke?igsh=MXRvYXRxbDZhNHlsMw==" target="_blank">Dinmukhammed</a>, <a href="https://www.instagram.com/zhmstv?igsh=MXZoZzZ2azY4Z2ZkYg%3D%3D&utm_source=qr" target="_blank">Miras</a></p>
+        <p class="textfoot">&copy; 2024 Snappy. All rights reserved. | Developed by <a href="https://www.instagram.com/thisismagzhan?igsh=eWU2OTBuaG1kNXlk" target="_blank">Magzhan</a>, <a href="https://www.instagram.com/dymtyjoke?igsh=MXRvYXRxbDZhNHlsMw==" target="_blank">Dinmukhammed</a>, <a href="https://www.instagram.com/zhmstv?igsh=MXZoZzZ2azY4Z2ZkYg%3D%3D&utm_source=qr" target="_blank">Miras</a></p>
         <div>
             <a href="about.html">About Us</a> | 
             <a href="contactus.html">Contact</a> | 
@@ -256,5 +380,6 @@
     </div>
     <script src="themechanger.js"></script>
     <script src="index.js"></script>
+    <script src="searchAndFilter.js"></script>
 </body>
 </html>

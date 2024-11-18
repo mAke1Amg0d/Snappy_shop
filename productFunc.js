@@ -82,30 +82,49 @@ stars.forEach(star => {
         }
     });
 });
-// KEYBOARD LIST
 
-document.addEventListener('DOMContentLoaded', function () {
-    const menuItems = document.querySelectorAll('#navMenu li');
-    let currentIndex = 0;
-  
-    menuItems[currentIndex].focus();
-  
-    document.addEventListener('keydown', function (event) {
-      switch (event.key) {
-        case 'ArrowDown':
-          event.preventDefault();
-          currentIndex = (currentIndex + 1) % menuItems.length;
-          menuItems[currentIndex].focus();
-          break;
-        case 'ArrowUp':
-          event.preventDefault();
-          currentIndex = (currentIndex - 1 + menuItems.length) % menuItems.length;
-          menuItems[currentIndex].focus();
-          break;
-        case 'Enter':
-          event.preventDefault();
-          menuItems[currentIndex].querySelector('a').click();
-          break;
-      }
+//Animation for buy
+document.getElementById('buy-button').addEventListener('click', function (e) {
+    e.preventDefault();
+
+    this.classList.add('clicked');
+    setTimeout(() => {
+        this.classList.remove('clicked');
+    }, 600);
+
+    const popupOverlay = document.createElement('div');
+    const popup = document.createElement('div');
+
+    popupOverlay.className = 'popup-overlay';
+    popup.className = 'popup-thankyou';
+
+    popup.innerHTML = `
+        <div class="popup-message">Thanks for buying!</div>
+        <button class="popup-close">Close</button>
+    `;
+
+    document.body.appendChild(popupOverlay);
+    document.body.appendChild(popup);
+
+    setTimeout(() => {
+        popup.classList.add('show');
+    }, 50);
+
+    document.querySelector('.popup-close').addEventListener('click', function () {
+        popup.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(popup);
+            document.body.removeChild(popupOverlay);
+        }, 300);
     });
-  });
+
+    popupOverlay.addEventListener('click', function () {
+        popup.classList.remove('show');
+        setTimeout(() => {
+            document.body.removeChild(popup);
+            document.body.removeChild(popupOverlay);
+        }, 300);
+    });
+});
+
+
