@@ -177,6 +177,14 @@
             color: green;
         }
 
+        .day-theme .hide {
+            color: #f0f0f0;
+        }
+
+        .night-theme .hide {
+            color: rgb(121, 33, 222);
+        }
+
         .night-theme .price {
             color: rgb(178, 232, 175);
         }
